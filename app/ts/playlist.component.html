@@ -1,1 +1,16 @@
-<h2>My plalist will eventually go here</h2>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="#v of videos">
+            <td>{{v.ID}}</td>
+            <td>{{v.Title}}</td>
+            <td>{{v.Description}}</td>
+        </tr>
+    </tbody>
+</table>
