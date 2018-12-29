@@ -7,10 +7,10 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="#v of videos">
-            <td>{{v.ID}}</td>
-            <td>{{v.Title}}</td>
-            <td>{{v.Description}}</td>
+        <tr *ngFor="#v of video" (click)="onSelect(v)">
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+            <td>{{v.videoCode}}</td>
         </tr>
     </tbody>
 </table>
